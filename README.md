@@ -37,29 +37,28 @@ The initial dataset consisted of 19 potential features. A feature selection proc
 ### Full List of Analyzed Features:
 
 | Symbol | Variable Name | Type | Unit |
-| :--- | :--- | :--- | :--- |
-| **X1** | Own revenue of county budgets | Stimulant | PLN per capita |
-| **X2** | Average monthly gross salary | Stimulant | PLN |
-| **X3** | Registered unemployment rate | Destimulant | % |
-| **X4** | Crimes ascertained by the Police | Destimulant | per 1,000 inhabitants |
-| **X5** | Average useful floor area of a dwelling | Stimulant | m² |
-| **X6** | Net migration rate | Stimulant | per 1,000 population |
-| **X7** | Expenditure on transport | Stimulant | PLN per capita |
-| **X8** | Expenditure on education | Stimulant | PLN per capita |
+| :---: | :--- | :---: | :---: |
+| **X1** | Registered unemployment rate | Destimulant | % |
+| **X2** | Newly registered entities (REGON) | Stimulant | per 10k pop. |
+| **X3** | Share of long-term unemployed (>12 months) | Destimulant | % |
+| **X4** | Average monthly gross salary | Stimulant | PLN |
+| **X5** | Net migration rate (total) | Stimulant | per 1000 pop. |
+| **X6** | Old-age dependency ratio | Destimulant | % |
+| **X7** | Population using sewage system | Stimulant | % |
+| **X8** | Useful floor area per person | Stimulant | m² |
 | **X9** | Population per pharmacy | Destimulant | persons |
-| **X10** | Entities in the REGON register | Stimulant | per 10k population |
-| **X11** | Beds in general hospitals | Stimulant | per 10k population |
-| **X12** | Access to water supply systems | Stimulant | % |
-| **X13** | Public library borrowers | Stimulant | per 1,000 population |
-| **X14** | Municipal investment expenditure | Stimulant | PLN per capita |
-| **X15** | Share of green areas | Stimulant | % |
-| **X16** | Env. protection fixed assets outlays | Stimulant | PLN per capita |
-| **X17** | Infant mortality | Destimulant | per 1,000 live births |
-| **X18** | Natural increase | Stimulant | per 1,000 population |
-| **X19** | Children in preschool education | Stimulant | per 1,000 children |
-| **X20** | Tourist accommodation facilities | Stimulant | beds per 10k population |
+| **X10** | Doctors per 10k inhabitants | Stimulant | persons |
+| **X11** | Crimes ascertained by Police | Destimulant | per 1000 pop. |
+| **X12** | Passenger cars per 1000 inhabitants | Stimulant | pcs. |
+| **X13** | Hard-surface road density | Stimulant | km/100km² |
+| **X14** | Road accidents per 100k inhabitants | Destimulant | pcs. |
+| **X15** | Gas pollution emission | Destimulant | t/km² |
+| **X16** | Parks and green areas share | Stimulant | % |
+| **X17** | Legally protected areas share | Stimulant | % |
+| **X18** | Gross enrollment rate | Stimulant | % |
+| **X19** | Pupils per school section | Destimulant | persons |
 
-*Note: Destimulants (where lower is better) were transformed into Stimulants during the preprocessing stage.*
+*Note: Destimulants (where lower values are better) were transformed into Stimulants during the preprocessing stage to ensure mathematical consistency.*
 
 ## Methodology: Machine Learning & Statistics
 
